@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: demo
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    password: 123456
+    database: 1
+    timeout: 5000ms
+    jedis:
+      pool:
+        min-idle: 1
+        max-idle: 1
+        max-active: 2
+        max-wait: -1ms
+server:
+  port: 80
+swagger:
+  show: true
